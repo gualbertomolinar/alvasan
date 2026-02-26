@@ -106,6 +106,7 @@ DATABASES = {
     'default': dj_database_url.config(
         # Replace this value with your local database's connection string.
         default='postgresql://postgres:Misa1308@localhost:5432/alvasan',
+        #default='postgresql://jose:wwGiHOLoszNpGY2bEBifuSSAiuL4UJiZ@dpg-d6g68g8gjchc73d7v3k0-a.oregon-postgres.render.com/alvasan',
         conn_max_age=600
     )
 }
@@ -191,6 +192,7 @@ CORS_ALLOW_HEADERS = [
 CORS_ALLOWED_ORIGINS = [
     #"https://example.com",
     #"https://sub.example.com",
+    "https://dash-alvasan.onrender.com",
     "http://localhost:4200",
     "http://localhost:4300",
     "http://192.168.0.57:4300",
@@ -199,6 +201,7 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 CORS_ORIGIN_WHITELIST = [
+    "https://dash-alvasan.onrender.com",
     "http://localhost:4200",
     "http://localhost:4300",
     "http://192.168.0.57:4300",
