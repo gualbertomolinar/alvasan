@@ -208,4 +208,4 @@ CORS_ORIGIN_WHITELIST = [
 
 CORS_ALLOW_CREDENTIALS = True
 
-KEY_CH = os.environ.get('SECRET_KEY', default='mQMoTI0Y7wHx_-fboE9kCP7wOUzqUB0cgiFB4kOVi_Y=')
+KEY_CH = os.environ.get('KEY_CH', default='mQMoTI0Y7wHx_-fboE9kCP7wOUzqUB0cgiFB4kOVi_Y=')
