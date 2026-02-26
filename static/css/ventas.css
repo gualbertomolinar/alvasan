@@ -1,0 +1,92 @@
+/* Contenedor con scroll */
+.table-responsive {
+    overflow-x: auto;
+    width: 100%;
+    max-height: 70vh;
+}
+
+/* Estilos generales de celdas */
+table.dataTable thead th,
+table.dataTable tbody td,
+table.dataTable tfoot td {
+    min-width: 45px;
+    text-align: right;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+/* Colores por grupo */
+.grupo-total {
+    background-color: #d1e7dd !important;
+}
+
+.grupo-fact {
+    background-color: #cce5ff !important;
+}
+
+.grupo-nc {
+    background-color: #ffcccb !important;
+}
+
+/* Efecto cebra */
+table.dataTable tbody tr:nth-of-type(odd) td {
+    background-color: #ffffff !important;
+}
+
+table.dataTable tbody tr:nth-of-type(even) td {
+    background-color: #f2f2f2 !important;
+}
+
+/* Oscurecer colores en filas pares */
+table.dataTable tbody tr:nth-of-type(even) .grupo-total {
+    background-color: #b8daff !important;
+}
+
+table.dataTable tbody tr:nth-of-type(even) .grupo-fact {
+    background-color: #badbcc !important;
+}
+
+table.dataTable tbody tr:nth-of-type(even) .grupo-nc {
+    background-color: #ff7f7f !important;
+}
+
+/* ================================
+   FOOTER: Alineación + Negrita
+   (incluye footer clonado de DataTables)
+   ================================ */
+
+/* Ventas por Vendedor */
+#ventasXvendedor tfoot td,
+#ventasXvendedor tfoot th,
+#ventasXvendedor .dataTables_scrollFoot td,
+#ventasXvendedor .dataTables_scrollFoot th {
+    text-align: right !important;
+    font-weight: bold !important;
+}
+
+/* Ventas por Localidad */
+#ventasXlocalidad tfoot td,
+#ventasXlocalidad tfoot th,
+#ventasXlocalidad .dataTables_scrollFoot td,
+#ventasXlocalidad .dataTables_scrollFoot th {
+    text-align: right !important;
+    font-weight: bold !important;
+}
+
+/* Ventas por Producto */
+#ventasXproducto tfoot td,
+#ventasXproducto tfoot th,
+#ventasXproducto .dataTables_scrollFoot td,
+#ventasXproducto .dataTables_scrollFoot th {
+    text-align: right !important;
+    font-weight: bold !important;
+}
+
+/* Alinear a la derecha el footer real y el footer clonado */
+.dataTables_scrollFoot td,
+.dataTables_scrollFoot th,
+#ventasXvendedor tfoot td,
+#ventasXlocalidad tfoot td,
+#ventasXproducto tfoot td{
+    text-align: right !important;
+}
